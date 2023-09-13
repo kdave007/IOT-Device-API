@@ -1,23 +1,35 @@
 {
-  "name": "alerts-watchdog",
+  "name": "MOTHER_BASE",
   "version": "1.0.0",
   "description": "",
-  "main": "watchdog_main.js",
+  "main": "index.js",
   "scripts": {
-    "devstart": "npx nodemon watchdog_main.js"
+    "devstart": "npx nodemon server.js",
+    "dev:server": "nodemon --ignore sessions/ server.js"
   },
-  "author": "kevin",
+  "keywords": [],
+  "author": "atechnik",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.2",
     "express": "^4.17.1",
+    "express-session": "^1.17.1",
     "heapdump": "^0.3.15",
     "log4js": "^6.3.0",
-    "moment": "^2.27.0",
     "moment-timezone": "^0.5.31",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
     "mysql2": "^2.1.0",
     "node-cron": "^2.0.3",
-    "nodemailer": "^6.4.11",
-    "nodemon": "^2.0.4",
-    "segfault-handler": "^1.3.0"
+    "nodemailer": "^6.4.6",
+    "object-sizeof": "^1.6.0",
+    "promise-mysql": "^4.1.3",
+    "session-file-store": "^1.4.0",
+    "uuid": "^7.0.3",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
   }
 }
